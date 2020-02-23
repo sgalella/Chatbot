@@ -1,0 +1,385 @@
+* 
+{
+    font-family: "Raleway";
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+
+.chat
+{
+    
+    max-width: 45% !important;
+    margin: auto;
+    margin-top: 4%;
+    height: 450px;
+
+}
+
+img
+{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.header
+{
+    margin-top: 0%;
+    border-radius: 3px;
+    width: 100%;
+    height: 15%;
+    display: inline-block;
+    background-color: steelblue;
+
+}
+
+.header-img
+{
+    width: 6%;
+    margin-left: 4%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    float: left;
+}
+
+.header-info
+{
+    width: 30%;
+    float: left;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+.header-info h4
+{
+    margin-top: 0%;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 1%;
+}
+
+#status{
+    font-style: italic;
+    font-size: 12px;
+    color: #fff;
+}
+
+.header-info h6
+{
+    display: inline;
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 2%;
+}
+
+#online {
+    font-size: 10px;
+    color: greenyellow;
+}
+
+#offline {
+    font-size: 10px;
+    color: tomato;
+}
+
+
+/* ---------- */
+
+.messages
+{   
+    margin-top: -5px;
+    border: 2px solid #ccc;
+    overflow: scroll;
+    padding-bottom: 10px;
+    height: 95%;
+    overflow-y: auto;
+}
+
+
+/* ---------- */
+
+.received-chats-img
+{
+    width: 30px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.received-chats
+{
+    display: inline-block;
+    padding: 10px 0px 0px 0px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.received-chats-msg
+{
+    display: block;
+    margin-left: 20px;
+}
+
+.received-msg-inbox
+{
+    margin-top: 20px;
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.received-msg-inbox p
+{
+    margin-left: -10px;
+    word-wrap: break-word; 
+    background: #efefef none repeat scroll 0 0;
+    border-radius: 20px;
+    color: #646464;
+    font-size: 14px;
+    margin-bottom: 0;
+    padding: 5px 15px 5px 15px;
+    width: auto;
+    text-align: left;
+    
+}
+
+.time_received
+{   
+    color: #777;
+    font-size: 12px;
+    clear: both;
+    float: left;
+    margin-left: 3.5%
+}
+
+
+/* ---------- */
+
+
+.outgoing-chats-img
+{
+    width: 25px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+
+.outgoing-chats
+{
+    display: inline-block;
+    padding: 10px 0px 0px 0px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.outgoing-chats-msg
+{
+    display: block;
+    margin-right: 20px;
+}
+
+.outgoing-msg-inbox
+{
+    margin-top: 20px;
+    display: block;
+    width: 50%;
+    float: right;
+}
+
+.outgoing-msg-inbox p
+{
+    margin-right: -10px;
+    word-wrap: break-word; 
+    background: steelblue none repeat scroll 0 0;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0;
+    padding: 5px 15px 5px 15px;
+    width: auto;
+    text-align: left;
+}
+
+
+.time_outgoing
+{
+    color: #777;
+    font-size: 12px;
+    clear: both;
+    float: right;
+    margin-right: 2.5%
+}
+
+
+/* ---------- */
+
+.session_start
+{
+    clear: both;
+    width: auto;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.session_end
+{   
+    clear: both;
+    width: auto;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+
+/* ---------- */
+
+.bottom
+{   
+    border-radius: 3px;
+    height: 15%;
+    background-color: steelblue;
+}
+
+.buttons
+{   
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.buttons #textBox
+{   
+    font-size: 15px;
+    display: inline-block;
+    border-radius: 20px;
+    height: 34px;
+    width: 70%;
+    border: #000000;
+    margin-left: 5px;
+    background-color: #fff;
+    padding: 0px 0px 0px 10px;
+}
+
+#textBox:focus
+{
+    outline: none;
+}
+
+
+/* ---------- */
+
+.buttons #sendButton
+{   
+    height: 34px;
+    width: 34px;
+    display: inline-block;
+    border-radius: 35px;
+    padding: 0 0 0 0;
+    vertical-align: middle;
+}
+
+#sendButton:focus
+{
+    outline: none;
+}
+
+
+#sendButton:hover
+{
+    background-color: steelblue;
+    cursor: pointer;
+}
+
+#paper-plane
+{
+    color:steelblue;
+    font-size: 18px;
+    margin-right: 2px;
+    margin-top: 2px;
+}
+
+#sendButton:hover #paper-plane:before
+{
+    color: white;
+}
+
+
+/* ---------- */
+
+.buttons #listenButton
+{   
+    height: 34px;
+    width: 34px;
+    display: inline-block;
+    border-radius: 35px;
+    padding: 0 0 0 0;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+#listenButton:focus
+{
+    outline: none;
+
+}
+
+#listenButton:hover
+{
+    background-color: steelblue;
+    cursor: pointer;
+}
+
+#microphone
+{
+    color: steelblue;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+#listenButton:hover #microphone:before
+{
+    color: white;
+}
+
+
+/* ---------- */
+
+.buttons #speechButton
+{   
+    height: 34px;
+    width: 34px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0 0 0 0;
+    vertical-align: middle;
+
+}
+
+#speechButton:focus
+{
+    outline: none;
+}
+
+#speechButton:hover
+{
+    background-color: steelblue;
+    cursor: pointer;
+}
+
+#speech
+{
+    color: steelblue;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#speechButton:hover #speech:before
+{
+    color: white;
+}

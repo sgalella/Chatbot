@@ -1,0 +1,2 @@
+model_checkpoint_path: "/var/folders/j0/hpld8p6565j0vmwkfzzx13w00000gn/T/tmpvaa2_4zw/nlu/component_6_EmbeddingIntentClassifier.ckpt"
+all_model_checkpoint_paths: "/var/folders/j0/hpld8p6565j0vmwkfzzx13w00000gn/T/tmpvaa2_4zw/nlu/component_6_EmbeddingIntentClassifier.ckpt"

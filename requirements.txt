@@ -1,0 +1,2 @@
+rasa==1.7.3
+websockets==8.1

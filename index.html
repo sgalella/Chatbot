@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Chatbot</title>
+        <link rel="icon" href="images/agent-icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <div class="chat">
+            <div class="header">
+                <div class="header-img">
+                    <img src="images/agent-profile.png">
+                </div>
+                <div class="header-info" id="header-info">
+                    <h4>Chatbot</h4>
+                </div>
+            </div>
+            <div class="messages" id="messages">
+            </div>
+            <div class="bottom">
+                <div class="buttons">
+                    <input id="textBox" placeholder="Write down your message and press ENTER..." />
+                    <button id="sendButton" onclick="sendMessage()">
+                        <i class="fa fa-paper-plane" id="paper-plane"></i>
+                    </button>
+                    <button id="listenButton" onclick="recordMessage()">
+                        <i class="fa fa-microphone" id="microphone"></i>
+                    </button>
+                    <button id="speechButton" onclick="activateSpeech()">
+                        <i class="fa fa-volume-up" id="speech"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
