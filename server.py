@@ -2,6 +2,7 @@ import asyncio
 import json
 import os
 import websockets
+import time
 from rasa.core.agent import Agent
 
 
@@ -12,6 +13,7 @@ async def chatbot(websocket, path):
     if response['type'] == "start":  # Wait until receiving start
         print(f'\nConversation: {conversation_counter}')
         while True:
+            time.sleep(0.5)
             response_communication = await websocket.recv()
             response = json.loads(response_communication)
             output = await agent.handle_text(response['content'])
