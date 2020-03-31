@@ -1,6 +1,10 @@
 # Chatbot
 Demo for conversational agent. The server side is written in python (using [rasa](https://rasa.com/)) and the client is written in javascript. The communication is handled by a websockets.
 
+<p align="center">
+    <img width="650" height="300" src="images/scheme.png">
+</p>
+
 To run the chatbot, open two different terminals and run the following commands:
 
 ```bash
