@@ -5,6 +5,16 @@ Demo for conversational agent. The server side is written in python (using [rasa
     <img width="650" height="300" src="images/scheme.png">
 </p>
 
+## Installation
+
+To install the dependencies, run the following command:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
 To run the chatbot, open two different terminals and run the following commands:
 
 ```bash
