@@ -16,7 +16,7 @@ socket.onopen = function(){
         content: null
     }
     socket.send(JSON.stringify(msg));
-
+    
     var current_time = new Date();
     var text_start = "Session started the " + 
     (current_time.getDate()<10?"0":"") + current_time.getDate() + "/" + 
@@ -28,14 +28,15 @@ socket.onopen = function(){
     
     var start = document.createElement("div");
     start.setAttribute("class", "session_start");
+    
     var text = document.createTextNode(text_start)
     start.appendChild(text)
+    
     document.getElementById("messages").appendChild(start);
 }
 
 // Retrieve chatbot response from the server
 socket.onmessage = function(event){
-
     var socket_msg = JSON.parse(event.data);
 
     var received_chats = document.createElement("div");
@@ -60,6 +61,7 @@ socket.onmessage = function(event){
 
     var time = document.createElement("div");
     time.setAttribute("class", "time_received");
+    
     var text = document.createTextNode(time_to_display);
     time.appendChild(text);
 
@@ -92,7 +94,6 @@ socket.onmessage = function(event){
         var text = document.createTextNode(text_end)
         end.appendChild(text)
         document.getElementById("messages").appendChild(end);
-
         document.getElementById("messages").scrollTop = document.getElementById("messages").scrollHeight;
 
         socket.close()
@@ -107,15 +108,12 @@ socket.onmessage = function(event){
 
 // Collect the query from the textbox and send it to the server
 function sendMessage(){
-
     var content = document.getElementById("textBox").value;
     var msg = {
         type: "request",
         content: content
     }
-
     if (msg.content) {
-
         socket.send(JSON.stringify(msg));
 
         var outgoing_chats = document.createElement("div");
@@ -164,37 +162,41 @@ function sendMessage(){
 
 // Check status of the connection (online - offline) with a delay of 0.5 seconds
 window.setInterval(function(){
-
     if (!document.getElementById("online") && !document.getElementById("offline")){
         var status = document.createElement("div");
         status.id = "status";
+        
         var circle = document.createElement("i");
         circle.setAttribute("class", "fa fa-circle");
         circle.id = "offline";
+        
         var h6 = document.createElement("h6");
         var text_offline = document.createTextNode("offline");
         h6.appendChild(text_offline);
         status.appendChild(circle);
         status.appendChild(h6);
+        
         document.getElementById("header-info").appendChild(status)
     }
     else if (socket.readyState == WebSocket.OPEN && document.getElementById("offline")){
         document.getElementById("status").remove()
         var status = document.createElement("div");
         status.id = "status";
+        
         var circle = document.createElement("i");
         circle.setAttribute("class", "fa fa-circle");
         circle.id = "online";
+        
         var h6 = document.createElement("h6");
         var text_online = document.createTextNode("online");
         h6.appendChild(text_online);
         status.appendChild(circle);
         status.appendChild(h6);  
+        
         document.getElementById("header-info").appendChild(status)
 } 
     else if (socket.readyState == WebSocket.CLOSED && document.getElementById("online")){
         document.getElementById("status").remove()
-
         var status = document.createElement("div");
         status.id = "status";
 
@@ -207,6 +209,7 @@ window.setInterval(function(){
         h6.appendChild(text_offline);
         status.appendChild(circle);
         status.appendChild(h6);
+        
         document.getElementById("header-info").appendChild(status)
 }
 }, 500);
@@ -233,17 +236,13 @@ function activateSpeech () {
 // Speech recognition
 var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
 var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
-
 var grammar = "#JSGF V1.0;"
-
 var recognition = new SpeechRecognition();
 var speechRecognitionGrammarList = new SpeechGrammarList;
 speechRecognitionGrammarList.addFromString(grammar, 1);
-
 recognition.grammars = speechRecognitionGrammarList;
 recognition.lang = "en-US";
 recognition.interimResults = false;
-
 var listening = false;
 
 recognition.onresult = function(){
