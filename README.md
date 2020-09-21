@@ -1,5 +1,5 @@
 # Chatbot
-Demo for conversational agent. The server side is written in python (using [rasa](https://rasa.com/)) and the client is written in javascript. The communication is handled by a websockets.
+Template for a conversational agent. The server-side is written in python (using [Rasa](https://rasa.com/)) and the client-side is written in javascript. The communication is handled by a websockets protocol.
 
 <p align="center">
     <img width="650" height="300" src="images/scheme.png">
