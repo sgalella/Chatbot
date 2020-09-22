@@ -13,18 +13,20 @@ To install the dependencies, run the following command:
 pip install -r requirements.txt
 ```
 
+
+
 ## Usage
 
 To run the chatbot, open two different terminals and run the following commands:
 
 ```bash
 # Terminal 1: Run the server
-python server.py
+python server/server.py
 ```
 
 ```bash
 # Terminal 2: Open the client
-./client.sh
+./client/client.sh
 ```
 
 Browse the website given by the client. The chatbot includes speech recognition and text-to-speech.
