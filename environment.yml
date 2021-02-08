@@ -1,0 +1,8 @@
+name: chatbot
+dependencies:
+  - python=3.6
+  - pip
+  - pip:
+    - rasa==1.7.3
+    - tensorflow==2.4.0
+    - websockets==8.1
