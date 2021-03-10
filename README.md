@@ -1,5 +1,5 @@
 # Chatbot
-Template for a conversational agent. The server-side is written in python (using [Rasa](https://rasa.com/)) and the client-side is written in javascript. The communication is handled by a websockets protocol.
+Template for a conversational agent. The server-side is written in python (using [Rasa](https://rasa.com/)) and the client-side is written in javascript. The communication is handled by a [websockets protocol](https://en.wikipedia.org/wiki/WebSocket).
 
 <p align="center">
     <img width="650" height="300" src="images/scheme.png">
@@ -23,8 +23,7 @@ By default the environment name is `chatbot`. To activate it run:
 
 ```bash
 conda activate chatbot
-
-
+```
 
 ## Usage
 
